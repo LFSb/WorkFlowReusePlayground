@@ -16,12 +16,12 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   sandbox: 
-    uses: ./github/workflows/template.yml
+    uses: ./.github/workflows/template.yml
     with:
       working-directory: "./live/sandbox"
       environment: "sandbox"
   staging:
-    uses: ./github/workflows/template.yml
+    uses: ./.github/workflows/template.yml
     with:
       working-directory: "./live/staging"
       environment: "staging"
