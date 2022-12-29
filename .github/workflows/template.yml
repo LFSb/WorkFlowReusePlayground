@@ -16,5 +16,5 @@ jobs:
         run: echo ${{ inputs.working-directory }}
       
       - name: conditional step, only run on production.
-        if: inputs.environment == "production"
+        if: inputs.environment == 'production'
         run: echo "we should be on production right now."
