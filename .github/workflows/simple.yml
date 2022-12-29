@@ -22,6 +22,13 @@ jobs:
       environment: "sandbox"
   staging:
     uses: ./.github/workflows/template.yml
+    needs: sandbox
     with:
       working-directory: "./live/staging"
       environment: "staging"
+  production:
+    uses: ./.github/workflows/template.yml
+    needs: staging 
+    with:
+      working-directory: "./live/production"
+      environment: "production"
