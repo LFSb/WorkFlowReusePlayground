@@ -5,7 +5,7 @@ on:
         required: true
         type: string
       environment:
-        requireD: true
+        required: true
         type: string
 jobs:
   reusable_workflow_job:
